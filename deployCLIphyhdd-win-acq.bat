@@ -1,0 +1,14 @@
+@ECHO OFF
+REM CMD CLI Physical HDD Acquisition Win hosts
+REM dchow[AT]xtecsystems.com 20170627
+REM cmd /c START /MIN \\foo\script\tanium-phyhdd-win64-acq-test.bat <-- run via Tanium push
+REM Why you can't hide CMD https://www.howtogeek.com/131597/can-i-run-a-windows-batch-file-without-a-visible-command-prompt/
+REM Would use PowerShell hidden but most users don't have Set-Execution untrust
+REM *NOTICE* cmd.exe WILL go away in later updates or versions of Windows per Microsoft announcement
+ECHO -- DO NOT CLOSE -- IT/INFOSEC MAINTENANCE -- DO NOT CLOSE -- 
+FOR /F "USEBACKQ" %%i IN (`hostname.exe`) DO SET HVAR=%%i
+SET DSTPATH=\\vpwencaseapke01\encase\test\physical\
+SET E01FILE=_PHY
+winacq.exe -p "%DSTPATH%%HVAR%%E01FILE%" -d 1 -n TaniumAcquisitionAuto -m "%HVAR% Physical Dev 0" -e CIRT -r 000 -c 000 -v
+EXIT
+
