@@ -1,5 +1,5 @@
 # RemoteAcquireCLI
-Remotely acquire Windows and Linux hosts into Encase formatted image container/files for physical, logical, and memory.
+Remotely acquire Windows and Linux hosts into Encase compatible image container/files for physical, logical, and memory.
 
 1) Unzip the dependency tools zip into the same directory as the scripts
 2) Modify the script(s) to the correct login auth and share destinations
