@@ -9,7 +9,7 @@
 
 Write-Host "-- DO NOT CLOSE -- IT/INFOSEC MAINTENANCE -- DO NOT CLOSE --"
 $hostvar = (hostname.exe)
-[string]$baseRemotePath = "\\vpwencaseapke01\encase\test\mem\"
+[string]$baseRemotePath = "\\foo\encase\test\mem\"
 [string]$E01file = "_mem"
 [string]$fullRemoteDstPath = $baseRemotePath + $hostvar + $E01file
 .\winen64.exe -p "$fullRemoteDstPath" -d 1 -n TaniumAcquisitionAuto -m $hostvar -c 000 -e CIRT -r 000
