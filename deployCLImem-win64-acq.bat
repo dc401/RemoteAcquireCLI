@@ -7,7 +7,7 @@ REM Would use PowerShell hidden but most users don't have Set-Execution untrust
 REM *NOTICE* cmd.exe WILL go away in later updates or versions of Windows per Microsoft announcement
 ECHO -- DO NOT CLOSE -- IT/INFOSEC MAINTENANCE -- DO NOT CLOSE -- 
 FOR /F "USEBACKQ" %%i IN (`hostname.exe`) DO SET HVAR=%%i
-SET DSTPATH=\\vpwencaseapke01\encase\test\mem\
+SET DSTPATH=\\foo\encase\test\mem\
 SET E01FILE=_MEM
 REM ECHO Variable Host %HVAR%
 REM ECHO Variable Path %DSTPATH%
