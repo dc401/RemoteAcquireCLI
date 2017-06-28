@@ -1,4 +1,5 @@
 # RemoteAcquireCLI
+Remotely acquire Windows and Linux hosts into Encase formatted image container/files for physical, logical, and memory.
 
 1) Unzip the dependency tools zip into the same directory as the scripts
 2) Modify the script(s) to the correct login auth and share destinations
@@ -9,3 +10,5 @@
 Run one of the scripts meant for Windows either PowerShell or Batch file. You will need these scripts copied to the endpoint(s)
 
 Licensed under GPL v2 . NO expressed warranities of any kind.
+
+Like our open source tools and utilities? Find out more at SCIS Security. www.scissecurity.com
